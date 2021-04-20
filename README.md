@@ -1,5 +1,6 @@
 # CS534DL_Final_Proj
-##Run Stock_data.py to get a list of stock data, each element in the list is one year daily stock dataframe including features listed below:
+
+1.Run Stock_data.py to get a list of stock data, each element in the list is one year daily stock dataframe including features listed below:
 ['open', 'close', 'high', 'low', 'volume', 'amount', 'volume_delta',
        'open_2_d', 'open_-2_r', 'cr', 'cr-ma1', 'cr-ma2', 'cr-ma3',
        'volume_-3,2,-1_max', 'volume_-3~1_min', 'kdjk', 'kdjd', 'kdjj',
@@ -9,4 +10,4 @@
        'pdi', 'mdi', 'dx', 'adx', 'adxr', 'trix', 'close_3_trix', 'trix_9_sma',
        'tema', 'close_2_tema', 'vr', 'vr_6_sma']
 
-## Change symbol_list,period,interval to get data of different stocks, perionds and interval
+2.Change symbol_list,period,interval to get data of different stocks, perionds and interval
