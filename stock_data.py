@@ -1,6 +1,6 @@
 # https://pypi.org/project/yfinance/
 # https://pypi.org/project/stock-dataframe/
-from stock_dataframe import StockDataFrame
+from stockstats import StockDataFrame
 
 def generate_df(company,period,interval):
     rawdata = yf.download(  # or pdr.get_data_yahoo(...
