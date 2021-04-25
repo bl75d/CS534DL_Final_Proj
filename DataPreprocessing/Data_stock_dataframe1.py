@@ -246,6 +246,7 @@ def GetStockData(ticker,prd,intvl):
 
 # Use the highest price for next trading day as target:
 def generate_price_label(stock):
+        # take close price in the next trading day as the target
         adj_price = np.asarray(stock['close'])
         # use adjusted price as target price for next trading day
         # adj_price = np.asarray(stock['amount'] / stock['volume'])
