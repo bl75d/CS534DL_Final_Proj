@@ -19,3 +19,5 @@
        'tema', 'close_2_tema', 'vr', 'vr_6_sma']
 
 >2.Change symbol_list,period,interval to get data of different stocks, perionds and interval
+
+## Comment: Contact me if you need stock data in any other structure.
