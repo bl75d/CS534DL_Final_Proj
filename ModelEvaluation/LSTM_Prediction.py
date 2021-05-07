@@ -51,6 +51,11 @@ def train_lstm(model, Xtrain, ytrain, val_size = 0.2, num_epochs=200, window_siz
   
   x_train = torch.from_numpy(Xtrain).type(torch.Tensor)
   y_train = torch.from_numpy(ytrain).type(torch.Tensor)
+   
+  # normalize y
+  scaler = MinMaxScaler(feature_range=(-1, 1))
+  y_train_sc = scaler.fit_transform(y_train)
+  y_train_sc = torch.from_numpy(y_train_sc).type(torch.Tensor)
   
   loss_fn = torch.nn.MSELoss()
   optimiser = torch.optim.Adam(model.parameters(), lr=0.001)
