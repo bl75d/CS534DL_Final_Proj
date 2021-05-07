@@ -10,6 +10,7 @@ then train: model = train_lstm(model,Xtrain,ytrain)
 import torch
 import torch.nn as nn
 import numpy as np
+import copy
 from sklearn.preprocessing import MinMaxScaler
 
 class LSTM(nn.Module):
