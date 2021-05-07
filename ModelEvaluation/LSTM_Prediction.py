@@ -3,9 +3,13 @@
 
 This one is for trainning data. We will split training and validation sets inside of it.Leave test data for testing in the end.
 after you get Xtrain and ytrain -->
-First create a model: model = LSTM()
-then train: model = train_lstm(model,Xtrain,ytrain)
+First create a model,then train: 
 """
+'''
+from ModelEvaluation.LSTM_Prediction import LSTM, train_lstm
+model = LSTM()
+best_model = train_lstm(model,Xtrain,ytrain)
+'''
 
 import torch
 import torch.nn as nn
