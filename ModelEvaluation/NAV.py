@@ -26,7 +26,7 @@ class Nav:
                 self.cash +=self.stockquant*self.stockprice
                 self.stockquant=0
                 self.stockvalue=0
-                self.nav=self.cash
+                self.nav=self.stockvalue+self.cash
 
             self.tradinghist.append(signal)
             self.pricehist.append(price)
@@ -41,6 +41,7 @@ class Nav:
                 self.stockquant = int(self.cash/self.stockprice)
                 self.stockvalue = self.stockquant*self.stockprice
                 self.cash -= self.stockvalue
+                self.nav=self.stockvalue+self.cash
 
             self.tradinghist.append(signal)
             self.pricehist.append(price)
@@ -94,4 +95,3 @@ def Generate_nav(fund,symbol,price,y_predict):
         return portofolio.navhist
     else:
         print("Prediction length error! Check generate_nav()")
-
